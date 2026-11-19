@@ -1,0 +1,4 @@
+# No position table: nothing tells the model where each letter sits. It can
+# still pick up some sense of order on its own, because each letter only sees
+# the letters before it. How much does losing the table cost?
+positions = "none"

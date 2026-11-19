@@ -1,0 +1,4 @@
+# tiny2's shape with GELU instead of ReLU in the middle part.
+# Train it fresh and compare its eval score with a fresh ReLU model trained
+# for the same time (models/tiny2.toml).
+activation = "gelu"

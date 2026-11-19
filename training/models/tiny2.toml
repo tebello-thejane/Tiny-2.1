@@ -1,0 +1,18 @@
+# The design of the shipped model, training/tiny2.pt (366,528 parameters).
+# Copy this file, change something, and train it:
+#   ./train2.py train 60 mine.pt --config models/mine.toml
+# Every setting is optional; anything left out keeps the value shown here.
+
+# Sizes
+D = 96          # width: how many numbers describe each letter. Must divide by H.
+L = 4           # layers stacked on top of each other
+H = 4           # attention heads per layer; each looks at D/H = 24 of the numbers
+HID = 256       # width of the middle part of each layer (96 -> 256 -> 96)
+
+# Wiring
+activation = "relu"     # how the middle part bends its numbers: "relu", "gelu" or "silu"
+norm = "rms"            # how numbers are rescaled before each part: "rms" or "layer"
+tied_output = true      # true: score the next letter with the letter embedding (no extra weights)
+                        # false: learn a separate output table (97 x D more weights)
+positions = "learned"   # "learned": the model knows letter order; "none": it does not
+attention = "all"       # "all", or the layers that keep attention, e.g. [1, 2, 4]

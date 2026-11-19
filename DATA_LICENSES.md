@@ -17,6 +17,6 @@ original datasets (download them into `training/mledoze/` and
 All other fact files (`training/facts/*.txt`, the other `.tsv` files and
 `training/raw/`) were written for this project and are under the MIT licence.
 
-The trained network (`dos/TINY.BIN`, `training/tiny2.pt`) was trained partly
-on the data above. Contains information from mledoze/countries, which is made
+The trained network (`training/tiny2.pt`, and any model you train from these
+facts) was trained partly on the data above. Contains information from mledoze/countries, which is made
 available under the ODbL, and from Periodic-Table-JSON (CC BY-SA 3.0).

@@ -1,0 +1,4 @@
+# No attention at all: each letter can only see itself, never the question or
+# the earlier letters, so the model can only guess the next letter from the
+# current one. Training it shows what attention is for.
+attention = []

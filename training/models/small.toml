@@ -1,0 +1,5 @@
+# A quarter-sized model (80,256 parameters): trains about four times faster.
+# How much does it remember after an hour?
+D = 64
+L = 2
+HID = 128

@@ -1,0 +1,6 @@
+# A bigger model (849,408 parameters) that tiny2.pt can grow into:
+#   ./train2.py train 30 wide.pt --grow tiny2.pt --config models/wide.toml
+# It starts out giving exactly tiny2's answers, then uses the extra room.
+D = 128
+L = 5
+HID = 384

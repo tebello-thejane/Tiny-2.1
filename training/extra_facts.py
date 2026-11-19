@@ -1,7 +1,12 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.14"
+# dependencies = []
+# ///
 """More table facts from public datasets.
   facts/geo3.tsv      subregion, borders, domain   (mledoze/countries)
   facts/elements.tsv  symbol, number, phase, kind  (Bowserinator/Periodic-Table-JSON)
-Usage: python3 -I extra_facts.py"""
+Usage: ./extra_facts.py"""
 import json, os, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

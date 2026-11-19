@@ -1,3 +1,8 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.14"
+# dependencies = []
+# ///
 """TINY training data, version 2.
 
 Turns the fact files in facts/ into an endless stream of (question, answer)
@@ -15,7 +20,7 @@ pairs. Compared with version 1 it adds:
 Every generator keeps some phrasings and items back for testing, so the
 test set measures whether the model generalises, not whether it memorised.
 
-Run: python3 -I gen2.py   -> statistics and samples."""
+Run: ./gen2.py   -> statistics and samples."""
 import glob, os, random, collections, string
 
 HERE = os.path.dirname(os.path.abspath(__file__))

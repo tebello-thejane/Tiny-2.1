@@ -1,6 +1,11 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.14"
+# dependencies = []
+# ///
 """Extra geography facts from the public mledoze/countries dataset.
 Writes facts/geo2.tsv with: language, currency, people (demonym), landlocked.
-Usage: python3 -I geo2.py mledoze/countries.json facts/geo.tsv facts/geo2.tsv"""
+Usage: ./geo2.py mledoze/countries.json facts/geo.tsv facts/geo2.tsv"""
 import json, sys, unicodedata, collections
 
 
